@@ -4,7 +4,7 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.min.css")
-		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Rubik:900")	
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Rubik:900")
 		title A-Frame, an easier way to build the 3D web.
 		link(rel="stylesheet" href="../css/bundle.css")
 		//- any meta stuff you want to standardize goes here...
@@ -13,11 +13,16 @@ html(lang="en")
 			.slides
 				section.slide-block
 					section(class="vertical-slide" data-background-iframe="https://aframe.io/aframe/examples/animation/aframe-logo/")
-						h1 A-Frame makes it easy to build 3D web experiences
+						h1 A-Frame makes it easy to build 3D web experiences 
+					section.vertical-slide
+						p Virtual and mixed reality experiences are finally starting to be realized as devices get powerful enough to run these complex 3D scenes.
+						p.fragment Furthremore, there's a complete stratification of devices -- VR experiences can be on mobile or purpose-made devices 
+						p.fragment It's not easy to make an experience that works across all devices -- usually, devs have to turn to a 3D game engine like #[a(href="https://unity3d.com/") Unity] (written in C#) or #[a(href="https://www.unrealengine.com/what-is-unreal-engine-4") Unreal] (written in C++).
+						p.fragment Meanwhile, with advances in WebGL 
 					section.vertical-slide
 						p Created by Mozilla at the end of 2015
 						p.fragment Open-source, version 0.5.0 as of June 2017.
-						p.fragment Focused on creating virtual reality experiences, already being used for more.
+						p.fragment Focused on creating virtual reality experiences, already being used for more.)
 				section.slide-block
 					section.vertical-slide
 						h1 How it works
@@ -49,25 +54,35 @@ html(lang="en")
 					section.vertical-slide
 						h1 VR shopping experience
 					section.vertical-slide
-						h1 Music visualizer!
+						h1 Augmented reality!
 				section.slide-block
 					h1 My own weird project
 				//- this is the last frame:
 				section.slide-block
 					h1 A-Frame is what I love about the web:
 					section.vertical-slide
-						h3 Low cost of entry
+						h4 Low cost of entry
 						p Unity vs. Unreal vs. a web framework with a syntax like HTML?
 						p.fragment I'll take the web framework any day.
 						p.fragment Easy to launch, easy to iterate.
 						p.fragment
 					section.vertical-slide
-						h3 Impressive collection of community contributions
+						h4 Impressive collection of community contributions
 						p.fragment Including...
 						ul
 							li.fragment Controllers
 							li.fragment Oceans
 							li.fragment Multi-user experiences with Firebase 😈
+				section.slide-block
+					h1 Say hey 👋 👋 👋! 
+					p Twitter: 
+						a(href="https://twitter.com/jordynmarcellus") @jordynmarcellus
+					p Github: 
+						a(href="https://github.com/jordynmarcellus") jordynmarcellus
+					p Website:
+						a(href="https://www.jordynmarcellus.com") www.jordynmarcellus.com
+					p Email:
+						a(mailto="jordynmarcellus@gmail.com") jordynmarcellus@gmail.com
 					//- explain why I "geek out " at the web and what it can be done
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/js/reveal.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/head.min.js")
