@@ -1,0 +1,74 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.min.css")
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Rubik:900")	
+		title A-Frame, an easier way to build the 3D web.
+		link(rel="stylesheet" href="../css/bundle.css")
+		//- any meta stuff you want to standardize goes here...
+	body
+		.reveal
+			.slides
+				section.slide-block
+					section(class="vertical-slide" data-background-iframe="https://aframe.io/aframe/examples/animation/aframe-logo/")
+						h1 A-Frame makes it easy to build 3D web experiences
+					section.vertical-slide
+						p Created by Mozilla at the end of 2015
+						p.fragment Open-source, version 0.5.0 as of June 2017.
+						p.fragment Focused on creating virtual reality experiences, already being used for more.
+				section.slide-block
+					section.vertical-slide
+						h1 How it works
+					section.vertical-slide
+						h1 HTML5 Custom entities (polyfilled)
+						p.fragment Allow you to write HTML-like syntax for 3D objects on the web.
+						p.fragment Can use stadard DOM selection APIs to manipulate 3D objects!
+						p.fragment Set attributes on your A-Frame entities to manipulate them with JavaScript.
+						//- code example from one a-entity
+					section.vertical-slide
+						h1 A layer of abstraction over three.js
+						p.fragment Instead of writing an enormous amount of three.js boilerplate, A-Frame's HTML-like syntax makes it a breeze to build.
+					section.vertical-slide
+						h1 Everything kept in memory
+						p JavaScript is pretty fast - but writing to the DOM is slow. 
+						p.fragment A-Frame keeps its changes in memory to avoid the performance hit of writing to the DOM.
+						p.fragment But that means you won't see any changes in the DOM 😬.
+						p.fragment Luckily it comes with...
+					section.vertical-slide
+						h1 The visual inspector
+						p.fragment Unless you're strong at calculus - which is not me -- placing objects in 3D space is a challenge!
+						p.fragment A-Frame's visual inspector is a great way to position objects in 3D space, alter attributes and just get in and get messy.
+				section.slide-block
+					section.vertical-slide
+						h1 What others have done:
+					section.vertical-slide
+						h1 A-Painter
+						p.fragment
+					section.vertical-slide
+						h1 VR shopping experience
+					section.vertical-slide
+						h1 Music visualizer!
+				section.slide-block
+					h1 My own weird project
+				//- this is the last frame:
+				section.slide-block
+					h1 A-Frame is what I love about the web:
+					section.vertical-slide
+						h3 Low cost of entry
+						p Unity vs. Unreal vs. a web framework with a syntax like HTML?
+						p.fragment I'll take the web framework any day.
+						p.fragment Easy to launch, easy to iterate.
+						p.fragment
+					section.vertical-slide
+						h3 Impressive collection of community contributions
+						p.fragment Including...
+						ul
+							li.fragment Controllers
+							li.fragment Oceans
+							li.fragment Multi-user experiences with Firebase 😈
+					//- explain why I "geek out " at the web and what it can be done
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/js/reveal.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/head.min.js")
+		script(src="./js/app.js")
