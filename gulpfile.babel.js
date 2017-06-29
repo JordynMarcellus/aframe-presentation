@@ -67,7 +67,9 @@ gulp.task('browserSync', function() {
 gulp.task('indexify', function() {
     return gulp.src('build/index.pug')
         .pipe( plumber({ errorHandler: handleErrors}) )
-        .pipe( pug() )
+        .pipe( pug({
+            pretty: true
+        }) )
         .pipe( gulp.dest('./public/'))
         .pipe( notify("HTML compiled!") )
         .pipe( reload({stream:true}) );
@@ -77,7 +79,9 @@ gulp.task('indexify', function() {
 gulp.task('compile_html', function() {
     return gulp.src('build/views/*.pug')
         .pipe( plumber({ errorHandler: handleErrors }) )
-        .pipe( pug() )
+        .pipe( pug({
+            pretty: true
+        }) )
         .pipe( gulp.dest('./public/html'))
         .pipe( notify("HTML compiled!") )
         .pipe( reload({stream:true}) );
