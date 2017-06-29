@@ -13,48 +13,68 @@ html(lang="en")
 			.slides
 				section.slide-block
 					section(class="vertical-slide" data-background-iframe="https://aframe.io/aframe/examples/animation/aframe-logo/")
-						h1 A-Frame makes it easy to build 3D web experiences 
+						h1 A-Frame takes the pain out of 3D on the web.
 					section.vertical-slide
-						p Virtual and mixed reality experiences are finally starting to be realized as devices get powerful enough to run these complex 3D scenes.
-						p.fragment Furthremore, there's a complete stratification of devices -- VR experiences can be on mobile or purpose-made devices 
-						p.fragment It's not easy to make an experience that works across all devices -- usually, devs have to turn to a 3D game engine like #[a(href="https://unity3d.com/") Unity] (written in C#) or #[a(href="https://www.unrealengine.com/what-is-unreal-engine-4") Unreal] (written in C++).
-						p.fragment Meanwhile, with advances in WebGL 
+						p Virtual and mixed reality experiences are  -- slowly -- becoming mainstream.
+						p.fragment VR can run on room-scale rigs or a humble mobile phone. 
+						p.fragment Usually, devs have to turn to a 3D game engine like #[a(href="https://unity3d.com/") Unity] (written in C#) or #[a(href="https://www.unrealengine.com/what-is-unreal-engine-4") Unreal] (written in C++) to build these experiences...
 					section.vertical-slide
+						h1 Enter the web
+						p.fragment With WebGL, WebGL 2 and WebAssembly, the web is stealthily becoming the premier place to launch 3D interactive experiences.
+						p.fragment Lots of libraries out there to build these kinds of experiences in:
+						ul
+							li.fragment Three.js
+							li.fragment Babylon.js
+							li.fragment Phaser
+							li.fragment PlayCanvas
+							li.fragment A-Frame
+					section.vertical-slide
+						h1 A-Frame facts
 						p Created by Mozilla at the end of 2015
 						p.fragment Open-source, version 0.5.0 as of June 2017.
-						p.fragment Focused on creating virtual reality experiences, already being used for more.)
+						p.fragment Focused on creating virtual reality experiences
+					section.vertical-slide
+						h1 An example A-Frame scene (360 videosphere)
+						pre
+					section(class="vertical-slide" data-background-iframe="http://jordyn.juicemobile.com/360-video-proto/")
+
 				section.slide-block
 					section.vertical-slide
 						h1 How it works
 					section.vertical-slide
-						h1 HTML5 Custom entities (polyfilled)
+						h1 HTML5 Custom elements (through a polyfill)
 						p.fragment Allow you to write HTML-like syntax for 3D objects on the web.
-						p.fragment Can use stadard DOM selection APIs to manipulate 3D objects!
-						p.fragment Set attributes on your A-Frame entities to manipulate them with JavaScript.
-						//- code example from one a-entity
+						p.fragment Can use stadard DOM selection APIs -- document.querySelector, setAttribute -- or jQuery to manipulate 3D objects!
+						p.fragment Set attributes on your A-Frame elements, manipulate them them with JavaScript.
 					section.vertical-slide
 						h1 A layer of abstraction over three.js
 						p.fragment Instead of writing an enormous amount of three.js boilerplate, A-Frame's HTML-like syntax makes it a breeze to build.
+						p.fragment Use attributes to set values like rotation, position and scale easily.
+						pre  
 					section.vertical-slide
 						h1 Everything kept in memory
 						p JavaScript is pretty fast - but writing to the DOM is slow. 
 						p.fragment A-Frame keeps its changes in memory to avoid the performance hit of writing to the DOM.
-						p.fragment But that means you won't see any changes in the DOM 😬.
+						p.fragment But that means you won't see any changes in the DOM inspector 😬
 						p.fragment Luckily it comes with...
 					section.vertical-slide
 						h1 The visual inspector
 						p.fragment Unless you're strong at calculus - which is not me -- placing objects in 3D space is a challenge!
 						p.fragment A-Frame's visual inspector is a great way to position objects in 3D space, alter attributes and just get in and get messy.
+						p.fragment Let's zoom back...
 				section.slide-block
 					section.vertical-slide
 						h1 What others have done:
-					section.vertical-slide
-						h1 A-Painter
-						p.fragment
-					section.vertical-slide
-						h1 VR shopping experience
-					section.vertical-slide
+					section(class="vertical-slied" data-background-iframe="https://www.washingtonpost.com/video/mars/public/")
+						h1 Journalism
+					section(class="vertical-slide" data-background-image="https://cloud.githubusercontent.com/assets/3951311/24645643/a48d226a-1921-11e7-88b5-ab5c3741f097.gif")
+						h1 A Rocket League rip-off
+					section(class="vertical-slide" data-background-iframe="https://bl.ocks.org/jeromeetienne/feeb69257803e69f18dc3ea5f4fc6d71#index.html")
 						h1 Augmented reality!
+					section.vertical-slide
+						h1 My faves: weird virtual landscapes
+					section(class="vertical-slide" data-background-iframe="https://aframe.io/aframe/examples/animation/aframe-logo/")
+					section(class="vertical-slide" data-background-iframe="http://carpedmt.github.io/")
 				section.slide-block
 					h1 My own weird project
 				//- this is the last frame:
@@ -63,18 +83,24 @@ html(lang="en")
 					section.vertical-slide
 						h4 Low cost of entry
 						p Unity vs. Unreal vs. a web framework with a syntax like HTML?
-						p.fragment I'll take the web framework any day.
-						p.fragment Easy to launch, easy to iterate.
-						p.fragment
+						p.fragment Nothing to install to create -- or play
+						p.fragment Open-source, if a browser can run the 
+						p.fragment 
 					section.vertical-slide
-						h4 Impressive collection of community contributions
-						p.fragment Including...
-						ul
-							li.fragment Controllers
-							li.fragment Oceans
-							li.fragment Multi-user experiences with Firebase 😈
+						h4 Fun community
+						p Join A-Frame's Slack channel https://goo.gl/stVi5G! 
+					section.vertical-slide
+						h4 No gatekeepers
+						p.fragment Most VR experiences are made by people who look like me - white, cis men. 
+						p.fragment We #[strong need] people from marginalized backgrounds to help push the boundaries of what we can do with these kinds of technologies
+						p.fragment A-Frame, like the web, is the perfect tool to help people create and promote  
 				section.slide-block
-					h1 Say hey 👋 👋 👋! 
+					h1 Call to action
+					p.fragment Use A-Frame to create and explore new environments that can only exist virtually! 
+					p.fragment Use A-Frame to make weird JavaScript art!
+					p.fragment Use A-Frame to make games! 
+				section.slide-block
+					h1 👋 👋 👋
 					p Twitter: 
 						a(href="https://twitter.com/jordynmarcellus") @jordynmarcellus
 					p Github: 
@@ -86,4 +112,5 @@ html(lang="en")
 					//- explain why I "geek out " at the web and what it can be done
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/js/reveal.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/head.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/plugin/notes/notes.js")
 		script(src="./js/app.js")
