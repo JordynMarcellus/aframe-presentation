@@ -41,7 +41,17 @@
           </section>
           <section class="vertical-slide">
             <h1>Example (360 video):</h1>
-            <pre></pre>
+            <pre><code>&lt;a-scene&gt;
+ 
+ &lt;a-assets&gt;
+ 
+   &lt;video id="video-texture" src="assets/test-video.mp4" autoplay muted crossorigin="anonymous" playsinline -webkit-playsinline&gt;&lt;/video&gt;
+ 
+ &lt;/a-assets&gt;
+ 
+ &lt;a-videosphere src="#video-texture" rotation="0 255 0"&gt;&lt;/a-videosphere&gt;
+ 
+&lt;/a-scene&gt;</code></pre>
           </section>
           <section class="vertical-slide" data-background-iframe="http://jordyn.juicemobile.com/360-video-proto/"></section>
         </section>
