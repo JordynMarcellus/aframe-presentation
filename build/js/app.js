@@ -15,7 +15,7 @@
         // presentational
         width: "100%",
         height: "100%",
-        margin: 0.1,
+        margin: 0.2,
         minScale: 1,
         maxScale: 1,
         dependencies:[

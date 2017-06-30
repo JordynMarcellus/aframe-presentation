@@ -12,19 +12,19 @@
     <div class="reveal">
       <div class="slides">
         <section class="slide-block">
-          <section class="vertical-slide" data-background-iframe="https://aframe.io/aframe/examples/animation/aframe-logo/">
-            <h1>A-Frame takes the pain out of 3D on the web.</h1>
+          <section class="vertical-slide initial-slide" data-background-iframe="https://aframe.io/aframe/examples/animation/aframe-logo/">
+            <h1>A-Frame: 3D HTML</h1>
+            <h2 class="shadowed fragment">(sort of)</h2>
           </section>
           <section class="vertical-slide">
-            <p>Virtual and mixed reality experiences are becoming mainstream.</p>
-            <p class="fragment">Huge array of devices can run these.  </p>
-            <p class="fragment">Usually, built in 3D game engine like <a href="https://unity3d.com/">Unity</a> (written in C#) or <a href="https://www.unrealengine.com/what-is-unreal-engine-4">Unreal</a> (written in C++).</p>
+            <p>Virtual and mixed reality experiences are becoming mainstream</p>
+            <p class="fragment">Huge array of devices</p>
+            <p class="fragment">Usually, built in 3D game engine like <a href="https://unity3d.com/">Unity</a> (written in C#) or <a href="https://www.unrealengine.com/what-is-unreal-engine-4">Unreal</a> (written in C++)</p>
           </section>
           <section class="vertical-slide">
             <h1>Enter the web</h1>
-            <p> Low-to-no cost of entry </p>
-            <p>With WebGL, WebGL 2 and WebAssembly, the web is stealthily becoming the premier place to launch 3D interactive experiences.</p>
-            <p class="fragment">Lots of libraries out there to build these kinds of experiences in:</p>
+            <p> Low-to-no cost of entry</p>
+            <p class="fragment">Lots of libraries:</p>
             <ul>
               <li class="fragment">Three.js</li>
               <li class="fragment">Babylon.js</li>
@@ -36,22 +36,12 @@
           <section class="vertical-slide">
             <h1>A-Frame facts</h1>
             <p>Created by Mozilla at the end of 2015</p>
-            <p>Open-source, version 0.5.0 as of June 2017.</p>
+            <p>Open-source, version 0.5.0 as of June 2017</p>
             <p class="fragment">Focused on creating virtual reality experiences</p>
           </section>
           <section class="vertical-slide">
-            <h1>An example A-Frame scene </h1>
-            <pre>
-
-  &lt;a-scene&gt;
-    &lt;a-assets&gt;
-      &lt;video id=&quot;video-texture&quot; src=&quot;assets/test-video.mp4&quot; autoplay muted 
-      crossorigin playsinline -webkit-playsinline&gt;&lt;/video&gt;
-    &lt;/a-assets&gt;
-    &lt;a-videosphere src=&quot;#video-texture&quot; rotation=&quot;0 255 0&quot;&gt;&lt;/a-videosphere&gt;
-  &lt;/a-scene&gt;
-
-            </pre>
+            <h1>Example (360 video):</h1>
+            <pre></pre>
           </section>
           <section class="vertical-slide" data-background-iframe="http://jordyn.juicemobile.com/360-video-proto/"></section>
         </section>
@@ -60,25 +50,25 @@
             <h1>How it works</h1>
           </section>
           <section class="vertical-slide">
-            <h1>HTML5 Custom elements (through a polyfill)</h1>
-            <p class="fragment">Allow you to write HTML-like syntax for 3D objects on the web.</p>
-            <p class="fragment">Can use stadard DOM selection APIs like document.querySelector (or jQuery!) to manipulate 3D objects.</p>
+            <h1>HTML5 Custom elements</h1>
+            <p class="fragment">Allow you to write HTML-like syntax for 3D objects on the web</p>
+            <p class="fragment">Can use stadard DOM selection APIs like <code>document.querySelector</code> (or jQuery!) to manipulate 3D objects</p>
           </section>
           <section class="vertical-slide">
-            <h1>A layer of abstraction over three.js</h1>
-            <p class="fragment">Instead of writing an enormous amount of three.js boilerplate, A-Frame's HTML-like syntax makes it a breeze to build.</p>
-            <p class="fragment">Use attributes to set values like rotation, position and scale easily.</p>
+            <h1>Abstracts three.js</h1>
+            <p class="fragment">A-Frame's HTML-like syntax makes it a breeze to build</p>
+            <p class="fragment">Set attributes to manipulate values like rotation, position and scale easily</p>
           </section>
           <section class="vertical-slide">
-            <h1>Everything kept in memory</h1>
+            <h1>Everything in memory</h1>
             <p>A-Frame keeps its changes in memory to avoid the performance hit of writing to the DOM.</p>
             <p class="fragment">But that means you won't see any changes in the DOM inspector 😬</p>
             <p class="fragment">Luckily it comes with...</p>
           </section>
           <section class="vertical-slide">
-            <h1>The visual inspector</h1>
-            <p class="fragment">Unless you're strong at calculus - which is not me -- placing objects in 3D space is a challenge!</p>
-            <p class="fragment">A-Frame's visual inspector is a great way to position objects in 3D space, alter attributes and just get in and get messy.</p>
+            <h1>Visual inspector</h1>
+            <p class="fragment">Placing objects in 3D space is a challenge!</p>
+            <p class="fragment">Visual inspector the perfect way get in and messy</p>
           </section>
           <section class="vertical-slide" data-background-iframe="http://jordyn.juicemobile.com/interactive-pano"></section>
         </section>
@@ -86,49 +76,54 @@
           <section class="vertical-slide">
             <h1>What others have done:</h1>
           </section>
-          <section class="vertical-slied" data-background-iframe="https://www.washingtonpost.com/video/mars/public/">
+          <section class="vertical-slide" data-background-image="./assets/mars-vr.PNG">
             <h1>Journalism</h1>
           </section>
           <section class="vertical-slide" data-background-image="https://cloud.githubusercontent.com/assets/3951311/24645643/a48d226a-1921-11e7-88b5-ab5c3741f097.gif">
-            <h1>A Rocket League rip-off</h1>
+            <h1>Games</h1>
           </section>
           <section class="vertical-slide" data-background-iframe="http://vr.zeldman.com/">
-            <h1>Shopping! </h1>
+            <h1>Shopping</h1>
           </section>
           <section class="vertical-slide">
             <h1>My faves: weird virtual landscapes</h1>
           </section>
-          <section class="vertical-slide" data-background-iframe="https://aframe.io/aframe/examples/animation/aframe-logo/"></section>
           <section class="vertical-slide" data-background-iframe="http://carpedmt.github.io/"></section>
         </section>
         <section class="slide-block">
-          <h1>A-Frame is what I love about the web:</h1>
           <section class="vertical-slide">
-            <h4>Low barrier to entry</h4>
+            <h1>A-Frame is what I love about the web:</h1>
+          </section>
+          <section class="vertical-slide">
+            <h1>Open by default</h1>
             <p>Nothing to install to build or play</p>
-            <p class="fragment"> </p>
           </section>
           <section class="vertical-slide">
-            <h4>Fun community</h4>
-            <p>Join A-Frame's Slack channel https://goo.gl/stVi5G! </p>
+            <h1>Progressive enhancement </h1>
+            <p>Improved experience for different devices</p>
           </section>
           <section class="vertical-slide">
-            <h4>No gatekeepers</h4>
-            <p>Your experience isn't mediated through Steam or the Oculus store.</p>
-            <p>Just give someone a URL and they can experience a whole new reality.</p>
+            <h1>No gatekeepers</h1>
+            <p>Anyone with a browser and a smartphone has access</p>
+            <p class="fragment">Not mediated through Steam, Facebook or Google</p>
           </section>
         </section>
         <section class="slide-block">
           <h1>Call to action</h1>
-          <p class="fragment">Use A-Frame to create and explore new environments that can only exist virtually! </p>
-          <p class="fragment">Use A-Frame to make games! </p>
-          <p class="fragment">Use A-Frame to make weird JavaScript art!</p>
+          <p class="fragment">Use A-Frame to make games</p>
+          <p class="fragment">Use A-Frame to make weird JavaScript art</p>
+          <p class="fragment">Use A-Frame to dream up new kinds of realities</p>
+        </section>
+        <section class="slide-block">
+          <h1>Tutorials</h1>
+          <p class="fragment">Tutorial by <a href="http://tiny.cc/aframe-tutorial">Alexandra Etienne</a> (http://tiny.cc/aframe-tutorial)</p>
+          <p class="fragment">Talk by A-Frame maintainers <a href="http://tiny.cc/aframe-talk">Kevin Ngo and Diego Marcos</a> (http://tiny.cc/aframe-talk)</p>
         </section>
         <section class="slide-block">
           <h1>👋 👋 👋</h1>
           <p>Twitter: <a href="https://twitter.com/jordynmarcellus">@jordynmarcellus</a></p>
           <p>Github: <a href="https://github.com/jordynmarcellus">jordynmarcellus</a></p>
-          <p>Website:<a href="https://www.jordynmarcellus.com">www.jordynmarcellus.com</a></p>
+          <p>Website: <a href="https://www.jordynmarcellus.com">www.jordynmarcellus.com</a></p>
           <p>Email:<a mailto="jordynmarcellus@gmail.com">jordynmarcellus@gmail.com</a></p>
         </section>
       </div>

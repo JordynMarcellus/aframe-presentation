@@ -1,0 +1,22 @@
+Slide notes:
+
+** A-Frame takes the pain 
+- 3D development is _hard_ and A-Frame makes it easier.
+
+**VR/AR/MR (second slide)
+
+virtual reality - headset, `step into a new reality` 
+augmented reality - device acts as a portal into a new reality (pokemon go)
+mixed reality - both; headset allows you to see and interact with 3d objects around you
+
+**enter the web
+
+- WebGL 1 enabled on all major browsers (let's throw the caniuse in there)
+- WebGL 2/WebAss are on Chrome and FF.
+
+**A-Frame facts
+- Zip through this (and make changes so that the only fragments are the list items)
+
+
+** A-Frame is what I love about the web
+
